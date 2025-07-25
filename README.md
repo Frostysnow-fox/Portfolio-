@@ -81,10 +81,8 @@ A modern, responsive portfolio website showcasing expertise in Electronics & Com
 ```
 Portfolio/
 ├── index.html              # Main HTML file
-├── css/
-│   └── style.css           # Main stylesheet
-├── js/
-│   └── script.js           # JavaScript functionality
+├── style.css           # Main stylesheet
+├── script.js           # JavaScript functionality
 ├── images/                 # Image assets
 │   ├── profile.jpg
 │   ├── background.jpg
