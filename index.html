@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prakash Adavi - Portfolio</title>
+    <link rel="icon" type="image/png" href="images/profile.jpg">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!--[if IE]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Custom Cursor -->
+    <div class="cursor-follower"></div>
+    <div class="cursor-dot"></div>
+
+    <!-- Particle background for hero -->
+    <canvas id="hero-particles"></canvas>
+
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-text">Prakash Adavi</div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="minimal-nav" id="main-nav" aria-label="Main Navigation">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">PA</span>
+            </div>
+            <div class="nav-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" role="button" tabindex="0">
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Circular Navigation (appears on scroll) -->
+    <div class="circular-nav" id="circular-nav">
+        <button class="circular-nav-toggle" aria-label="Toggle circular menu">
+            <div class="circular-content">
+                <div class="circular-logo">
+                    <span class="logo-text">PA</span>
+                </div>
+                <div class="menu-icon">
+                    <div class="menu-line"></div>
+                    <div class="menu-line"></div>
+                    <div class="menu-line"></div>
+                </div>
+            </div>
+        </button>
+        <div class="circular-menu" id="circular-menu">
+            <div class="menu-items">
+                <a href="#hero" class="menu-item" data-text="Home">
+                    <i class="fas fa-home"></i>
+                </a>
+                <a href="#about" class="menu-item" data-text="About">
+                    <i class="fas fa-user"></i>
+                </a>
+                <a href="#expertise" class="menu-item" data-text="Skills">
+                    <i class="fas fa-code"></i>
+                </a>
+                <a href="#projects" class="menu-item" data-text="Projects">
+                    <i class="fas fa-project-diagram"></i>
+                </a>
+                <a href="#journey" class="menu-item" data-text="Journey">
+                    <i class="fas fa-road"></i>
+                </a>
+                <a href="#contact" class="menu-item" data-text="Contact">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Full Screen Menu -->
+    <div class="fullscreen-menu" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="menu-content">
+            <ul class="menu-links">
+                <li><a href="#hero" class="menu-link">Home</a></li>
+                <li><a href="#about" class="menu-link">About</a></li>
+                <li><a href="#expertise" class="menu-link">Expertise</a></li>
+                <li><a href="#projects" class="menu-link">Projects</a></li>
+                <li><a href="#journey" class="menu-link">Journey</a></li>
+                <li><a href="#contact" class="menu-link">Connect</a></li>
+            </ul>
+            <div class="menu-social">
+                <a href="https://github.com/Prakashadavi" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/prakash-adavi-5b449828b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://leetcode.com/u/prakashaleetcode2024/" target="_blank" rel="noopener noreferrer" aria-label="LeetCode"><i class="fa-solid fa-code"></i></a>
+                <a href="https://www.geeksforgeeks.org/user/prakashad0az4/" target="_blank" rel="noopener noreferrer" aria-label="GeeksforGeeks"><i class="fa-solid fa-graduation-cap"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <!-- Animated Background Elements -->
+        <div class="hero-bg-animation">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+                <div class="shape shape-5"></div>
+            </div>
+            <div class="gradient-orbs">
+                <div class="orb orb-1"></div>
+                <div class="orb orb-2"></div>
+                <div class="orb orb-3"></div>
+            </div>
+        </div>
+
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-intro">
+                        <span class="intro-line">👋 Hello, I'm</span>
+                    </div>
+                    <h1 class="hero-title">
+                        <span class="title-line typing-text" data-text="Prakash Adavi">Prakash Adavi</span>
+                        <span class="title-line role-text">
+                            <span class="role-prefix">I'm a </span>
+                            <span class="rotating-roles" data-roles="ASIC Designer,ECE Engineer,ML Enthusiast,Problem Solver">ASIC Designer</span>
+                        </span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        <span class="subtitle-line">BTech ECE Student | PES University</span>
+                        <span class="subtitle-line">Passionate about ASIC design and innovative solutions</span>
+                    </p>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="10">0</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="4">0</span>
+                            <span class="stat-label">Years Learning</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="8">0</span>
+                            <span class="stat-label">Technologies</span>
+                        </div>
+                    </div>
+                    <div class="hero-actions">
+                        <a href="#projects" class="primary-btn">
+                            <span class="btn-text">Explore My Work</span>
+                            <span class="btn-icon">→</span>
+                        </a>
+                        <a href="#contact" class="secondary-btn">
+                            <span class="btn-text">Get In Touch</span>
+                            <span class="btn-icon">✉</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="profile-container">
+                        <div class="profile-image-wrapper">
+                            <img src="images/profile.jpg" alt="Prakash Adavi" class="hero-profile-image">
+                            <div class="profile-ring"></div>
+                            <div class="profile-glow"></div>
+                        </div>
+                    </div>
+                    <div class="floating-elements">
+                        <div class="floating-card tech-card">
+                            <i class="fas fa-code"></i>
+                            <span>Full Stack</span>
+                        </div>
+                        <div class="floating-card design-card">
+                            <i class="fas fa-palette"></i>
+                            <span>UI/UX</span>
+                        </div>
+                        <div class="floating-card data-card">
+                            <i class="fas fa-database"></i>
+                            <span>Database</span>
+                        </div>
+                        <div class="code-snippet">
+                            <div class="code-header">
+                                <div class="code-dots">
+                                    <span></span><span></span><span></span>
+                                </div>
+                                <span class="code-title">welcome.js</span>
+                            </div>
+                            <pre class="code-content"><code><span class="code-comment">// Building the future, one line at a time</span>
+<span class="code-keyword">const</span> <span class="code-variable">developer</span> = {
+  <span class="code-property">name</span>: <span class="code-string">"Prakash Adavi"</span>,
+  <span class="code-property">passion</span>: <span class="code-string">"Creating Solutions"</span>,
+  <span class="code-property">status</span>: <span class="code-string">"Ready to Code!"</span>
+};</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse-scroll">
+                <div class="wheel"></div>
+            </div>
+            <p>Scroll to explore</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title gradient-animate">About Me</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-layout">
+                    <div class="about-text-section">
+                        <div class="about-intro">
+                            <h3 class="about-title">Electronics & Communication Engineer | ASIC Designer</h3>
+                        </div>
+
+                        <p class="about-description">I'm a dedicated BTech student specializing in Electronics and Communication Engineering at PES University, Bengaluru, with a passion for ASIC design, machine learning, and embedded systems. My journey spans from digital circuit design to AI-powered healthcare solutions, combining hardware expertise with cutting-edge software technologies.</p>
+
+                        <div class="about-stats">
+                            <div class="stat-card">
+                                <div class="stat-icon">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                                <div class="stat-info">
+                                    <h4>Academic Excellence</h4>
+                                    <p>CGPA: 7.87 | BTech ECE | 4x DAC Scholar</p>
+                                </div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-icon">
+                                    <i class="fas fa-trophy"></i>
+                                </div>
+                                <div class="stat-info">
+                                    <h4>Project Portfolio</h4>
+                                    <p>ASIC Design | ML | Embedded Systems</p>
+                                </div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-icon">
+                                    <i class="fas fa-rocket"></i>
+                                </div>
+                                <div class="stat-info">
+                                    <h4>Ready for Impact</h4>
+                                    <p>Open to Opportunities</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-visual-section">
+                        <div class="skills-universe">
+                            <div class="skill-orbit">
+                                <div class="skill-planet" data-skill="Python">PY</div>
+                                <div class="skill-planet" data-skill="C++">C++</div>
+                                <div class="skill-planet" data-skill="C">C</div>
+                                <div class="skill-planet" data-skill="SQL">SQL</div>
+                                <div class="skill-planet" data-skill="RISC-V">RV</div>
+                                <div class="skill-planet" data-skill="MATLAB">ML</div>
+                            </div>
+                            <div class="center-core">
+                                <i class="fas fa-code"></i>
+                                <span class="core-text">Skills</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section id="expertise" class="expertise-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title gradient-animate">Areas of Expertise</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="expertise-grid">
+                <div class="expertise-card" data-category="programming">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="card-number">01</div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Programming & Development</h3>
+                        <p class="card-description">Strong foundation in multiple programming languages including Python, C++, C, SQL, and RISC-V with expertise in Data Structures & Algorithms.</p>
+                        <div class="card-skills">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">C++</span>
+                            <span class="skill-tag">C</span>
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">RISC-V</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="expertise-card" data-category="database">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div class="card-number">02</div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">ASIC Design & Tools</h3>
+                        <p class="card-description">Experience with ASIC design tools and methodologies including Cadence, Xilinx Vivado, and Tanner EDA for digital circuit design and verification.</p>
+                        <div class="card-skills">
+                            <span class="skill-tag">Cadence</span>
+                            <span class="skill-tag">Xilinx Vivado</span>
+                            <span class="skill-tag">Tanner EDA</span>
+                            <span class="skill-tag">SystemVerilog</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="expertise-card" data-category="embedded">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                        <div class="card-number">03</div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Development Tools</h3>
+                        <p class="card-description">Proficient with modern development tools and environments including VS Code, MySQL Workbench, and GitHub for efficient development workflow.</p>
+                        <div class="card-skills">
+                            <span class="skill-tag">VS Code</span>
+                            <span class="skill-tag">MySQL Workbench</span>
+                            <span class="skill-tag">GitHub</span>
+                            <span class="skill-tag">MATLAB</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title gradient-animate">Featured Creations</h2>
+                <div class="section-divider"></div>
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="ml">Machine Learning</button>
+                    <button class="filter-btn" data-filter="web">Web Development</button>
+                    <button class="filter-btn" data-filter="security">Security</button>
+                    <button class="filter-btn" data-filter="system">System Design</button>
+                </div>
+            </div>
+            <div class="projects-showcase">
+                <div class="projects-grid">
+                    <div class="project-card" data-category="ml">
+                        <div class="card-image" style="background-image: url('images/background.jpg'); background-size: cover; background-position: center;">
+                            <div class="card-overlay">
+                                <div class="overlay-content">
+                                    <i class="fas fa-microchip"></i>
+                                    <span>View Details</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h4 class="card-title">ASIC Design for Cardiovascular Disease Detection</h4>
+                                <span class="card-category">ML</span>
+                            </div>
+                            <p class="card-description">Designed a low-power handheld device to detect and classify cardiovascular diseases using ECG signals and hybrid transformer-based AI models. Developed an ASIC-optimized system using SystemVerilog and Cadence tools.</p>
+                            <div class="card-tech">
+                                <span class="tech-tag">Machine Learning</span>
+                                <span class="tech-tag">Cadence</span>
+                                <span class="tech-tag">SystemVerilog</span>
+                                <span class="tech-tag">TensorFlow Lite</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="ml">
+                        <div class="card-image" style="background-image: url('images/project1.jpeg'); background-size: cover; background-position: center;">
+                            <div class="card-overlay">
+                                <div class="overlay-content">
+                                    <i class="fas fa-film"></i>
+                                    <span>View Details</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h4 class="card-title">Movie Recommender System</h4>
+                                <span class="card-category">ML</span>
+                            </div>
+                            <p class="card-description">Developed a content-based movie recommender system using cosine similarity on metadata to suggest top 5 similar movies. Built an interactive UI with Streamlit, and integrated TMDB API to fetch and display dynamic movie posters.</p>
+                            <div class="card-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Machine Learning</span>
+                                <span class="tech-tag">Streamlit</span>
+                                <span class="tech-tag">TMDB API</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="security">
+                        <div class="card-image" style="background-image: url('images/project2.jpeg'); background-size: cover; background-position: center;">
+                            <div class="card-overlay">
+                                <div class="overlay-content">
+                                    <i class="fas fa-shield-alt"></i>
+                                    <span>View Details</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h4 class="card-title">Steganography in Digital Images</h4>
+                                <span class="card-category">Security</span>
+                            </div>
+                            <p class="card-description">Developed a steganography system to securely hide secret data within grayscale images using Least Significant Bit (LSB) techniques. Implemented image encoding, decoding, and visualization using MATLAB with binary manipulation and morphological operations.</p>
+                            <div class="card-tech">
+                                <span class="tech-tag">MATLAB</span>
+                                <span class="tech-tag">Image Processing</span>
+                                <span class="tech-tag">LSB Techniques</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="system">
+                        <div class="card-image" style="background-image: url('images/project3.jpeg'); background-size: cover; background-position: center;">
+                            <div class="card-overlay">
+                                <div class="overlay-content">
+                                    <i class="fas fa-database"></i>
+                                    <span>View Details</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h4 class="card-title">Bank Management System</h4>
+                                <span class="card-category">System</span>
+                            </div>
+                            <p class="card-description">Console-based application developed in C, utilizing Data Structures and Algorithms (DSA) to efficiently manage and manipulate bank account data. Provides fundamental banking functionalities including account creation, balance inquiry, deposit, withdrawal, and account deletion.</p>
+                            <div class="card-tech">
+                                <span class="tech-tag">C</span>
+                                <span class="tech-tag">DSA</span>
+                                <span class="tech-tag">Banking System</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Journey Section -->
+    <section id="journey" class="journey-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title gradient-animate">My Academic Journey</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="journey-timeline">
+                <div class="timeline-item" data-year="2018">
+                    <div class="timeline-marker">
+                        <div class="marker-icon">
+                            <i class="fas fa-school"></i>
+                        </div>
+                        <div class="marker-line"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="content-header">
+                            <div class="timeline-date">2017 - 2020</div>
+                            <div class="timeline-status foundation">Foundation</div>
+                        </div>
+                        <h3 class="timeline-title">10th Karnataka State Board</h3>
+                        <div class="timeline-institution">SS High School Tamba</div>
+                        <p class="timeline-description">Completed secondary education with excellent grades. This period marked the beginning of my academic excellence and interest in technology and problem-solving.</p>
+                        <div class="timeline-achievements">
+                            <div class="achievement">
+                                <i class="fas fa-star"></i>
+                                <span>96.16% Score</span>
+                            </div>
+                            <div class="achievement">
+                                <i class="fas fa-medal"></i>
+                                <span>Academic Excellence</span>
+                            </div>
+                        </div>
+                        <div class="timeline-skills">
+                            <span class="skill-badge tertiary">Academic Excellence</span>
+                            <span class="skill-badge tertiary">Foundation Building</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-year="2020">
+                    <div class="timeline-marker">
+                        <div class="marker-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div class="marker-line"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="content-header">
+                            <div class="timeline-date">2020 - 2022</div>
+                            <div class="timeline-status completed">Completed</div>
+                        </div>
+                        <h3 class="timeline-title">12th PUC Karnataka State Board</h3>
+                        <div class="timeline-institution">Tungal PU College Vijaypur</div>
+                        <p class="timeline-description">Completed higher secondary education in Science stream with focus on Mathematics, Physics, and Chemistry. Built strong analytical foundation for engineering studies.</p>
+                        <div class="timeline-achievements">
+                            <div class="achievement">
+                                <i class="fas fa-percentage"></i>
+                                <span>93% Score</span>
+                            </div>
+                            <div class="achievement">
+                                <i class="fas fa-flask"></i>
+                                <span>Science Stream</span>
+                            </div>
+                        </div>
+                        <div class="timeline-skills">
+                            <span class="skill-badge secondary">Mathematics</span>
+                            <span class="skill-badge secondary">Physics</span>
+                            <span class="skill-badge secondary">Chemistry</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-year="2021">
+                    <div class="timeline-marker">
+                        <div class="marker-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="marker-line"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="content-header">
+                            <div class="timeline-date">2022 - 2026</div>
+                            <div class="timeline-status current">Current</div>
+                        </div>
+                        <h3 class="timeline-title">B.Tech in Electronics and Communication Engineering</h3>
+                        <div class="timeline-institution">PES University, Bengaluru</div>
+                        <p class="timeline-description">Currently pursuing Bachelor of Technology in Electronics and Communication Engineering with strong academic performance. Focusing on ASIC design, embedded systems, machine learning, and digital signal processing.</p>
+                        <div class="timeline-achievements">
+                            <div class="achievement">
+                                <i class="fas fa-trophy"></i>
+                                <span>CGPA: 7.87</span>
+                            </div>
+                            <div class="achievement">
+                                <i class="fas fa-award"></i>
+                                <span>4x DAC Scholarship Awardee</span>
+                            </div>
+                            <div class="achievement">
+                                <i class="fas fa-book"></i>
+                                <span>Core: DSA, DBMS, OS</span>
+                            </div>
+                            <div class="achievement">
+                                <i class="fas fa-project-diagram"></i>
+                                <span>10+ Projects</span>
+                            </div>
+                        </div>
+                        <div class="timeline-skills">
+                            <span class="skill-badge primary">ASIC Design</span>
+                            <span class="skill-badge primary">Machine Learning</span>
+                            <span class="skill-badge primary">Embedded Systems</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title gradient-animate">Get In Touch</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Email</h3>
+                            <p>prakashadaviadavi@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Based In</h3>
+                            <p>Vijaypur, Wadhe</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Phone</h3>
+                            <p>+91-7483006631</p>
+                        </div>
+                    </div>
+                     <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Availability</h3>
+                            <p>Open to Internships & Full-Time Roles</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/Prakashadavi" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/prakash-adavi-5b449828b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://leetcode.com/u/prakashaleetcode2024/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LeetCode">
+                            <i class="fa-solid fa-code"></i>
+                        </a>
+                        <a href="https://www.geeksforgeeks.org/user/prakashad0az4/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="GeeksforGeeks">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <!-- Basic form - Consider using a service like Formspree for functionality -->
+                    <form class="elegant-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" target="_blank">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" name="name" placeholder="Your Name" class="form-input" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="email" placeholder="Your Email" class="form-input" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="_subject" placeholder="Subject" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Your Message" class="form-textarea" required></textarea>
+                        </div>
+                         <!-- Honey pot field for spam protection -->
+                         <input type="text" name="_gotcha" style="display:none">
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="footer-logo">
+                        <span class="logo-text">PA</span>
+                    </div>
+                    <p class="footer-text">Final Year BTech Student | Passionate about creating solutions through code.</p>
+                </div>
+                <div class="footer-center">
+                    <div class="footer-nav">
+                        <a href="#hero">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <p class="footer-copyright">&copy; <span id="current-year">2024</span> Prakash Adavi. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
